@@ -15,14 +15,19 @@ const library = [
     readingStatus: false,
   },
 ];
+function numberOfBooksRead(library) {
+  let count = 0;
 
-const library = [
-  { author: 'J.K. Rowling', title: 'Harry Potter and the Philosopher\'s Stone', readingStatus: true },
-  { author: 'J.R.R. Tolkien', title: 'The Hobbit', readingStatus: false },
-  { author: 'George Orwell', title: '1984', readingStatus: true }
-];
+  for (let i = 0; i < library.length; i++) {
+    if (library[i].readingStatus === true) {
+      count++;
+    }
+  }
 
-console.log(numberOfBooksRead(library)); // Output: 2
+  return count;
+}
+
+//console.log(numberOfBooksRead(library)); // Output: 
 
 };
 
