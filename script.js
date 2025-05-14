@@ -15,6 +15,7 @@ const library = [
     readingStatus: false,
   },
 ];
+
 function numberOfBooksRead(library) {
   let count = 0;
 
@@ -24,11 +25,8 @@ function numberOfBooksRead(library) {
     }
   }
 
-  return count;
+  return count;
 }
 
-//console.log(numberOfBooksRead(library)); // Output: 
-
-};
-
 // Do not change the code below
+
